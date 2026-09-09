@@ -1,0 +1,14 @@
+{
+  "name": "lean-cookie-consent-webflow",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Webflow custom code connector for Lean Cookie Consent.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-package.mjs",
+    "generate": "node scripts/generate-snippet.mjs",
+    "test": "node tests/snippet.test.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {}
+}
