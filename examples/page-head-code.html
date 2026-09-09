@@ -1,0 +1,22 @@
+<!-- Lean Cookie Consent for Webflow -->
+<script>
+  (function () {
+    var siteKey = 'site_1234567890abcdef';
+
+    if (!siteKey || siteKey === 'YOUR_SITE_KEY') {
+      return;
+    }
+
+    window.LeanCookieConsentWebflow = {
+      platform: 'webflow',
+      siteKey: siteKey,
+      hostname: window.location.hostname,
+      pathname: window.location.pathname
+    };
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://api.leancookieconsent.com/embed.js?site=' + encodeURIComponent(siteKey);
+    document.head.appendChild(script);
+  })();
+</script>
